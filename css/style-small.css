@@ -1,77 +1,130 @@
 /*
-	Strata by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Basic */
 
-	h1 {
-		font-size: 1.5em;
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+	h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+		display: none;
 	}
 
 	h2 {
-		font-size: 1.2em;
+		font-size: 1.75em;
 	}
 
 	h3 {
+		font-size: 1.5em;
+	}
+
+	h4 {
 		font-size: 1em;
+	}
+
+/* Image */
+
+	.image.left {
+		margin: 0 1.5em 1em 0;
+	}
+
+	.image.right {
+		margin: 0 0 1em 1.5em;
 	}
 
 /* Section/Article */
 
-	section.special, article.special {
-		text-align: center;
+	header br {
+		display: none;
 	}
 
 	header.major h2 {
-		font-size: 1.35em;
+		font-size: 2.5em;
 	}
 
-/* List */
-
-	ul.labeled-icons li {
-		padding-left: 2em;
-	}
-
-		ul.labeled-icons li h3 {
-			line-height: 1.75em;
+		header.major h2 + p {
+			font-size: 1.5em;
 		}
+
+/* Features */
+
+	.features article .image, .excerpt img {
+		display: block;
+		margin: 0 0 2.25em 0;
+		padding-right: 0;
+		width: 100%;
+	}
+
+	.features article .inner {
+		display: block;
+		width: 100%;
+	}
 
 /* Header */
 
-	#header {
-		padding: 2.25em 1.5em;
+	#header > header {
+		padding: 2em;
 	}
 
-		#header h1 {
-			font-size: 1.35em;
+		#header > header .avatar {
+			margin: 0 auto 1.6875em auto;
+			width: 6em;
 		}
 
-/* Footer */
+		#header > header h1 {
+			font-size: 1.5em;
+		}
 
-	#footer {
-		padding: 2.25em 1.5em;
+		#header > header p {
+			margin: 1em 0 0 0;
+		}
+
+	#header > footer {
+		padding: 1.5em;
 	}
 
 /* Main */
 
-	#main {
-		padding: 2.25em 1.5em 0.25em 1.5em;
+	#main > section > .container {
+		padding: 2em 0 0 0;
 	}
 
-		#main > section {
-			margin: 2.25em 0 0 0;
-			padding: 2.25em 0 0 0;
+/* One */
+
+	#one:before {
+		height: 7em;
+	}
+
+/* Footer */
+
+	#footer {
+		text-align: center;
+	}
+
+		#footer .copyright li {
+			border-left: 0;
+			display: block;
+			line-height: 1.75em;
+			margin: 0.75em 0 0 0;
+			padding-left: 0;
 		}
 
-/* Poptrox */
+			#footer .copyright li:first-child {
+				margin-top: 0;
+			}
 
-	.poptrox-popup {
-		border-radius: 0;
+/* Layers */
+
+	#titleBar .toggle {
+		height: 4em;
+		width: 6em;
 	}
 
-		.poptrox-popup .nav-next:before,
-		.poptrox-popup .nav-previous:before {
-			margin-top: -1em;
+		#titleBar .toggle:before {
+			font-size: 14px;
+			width: 44px;
 		}

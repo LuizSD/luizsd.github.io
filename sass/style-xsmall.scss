@@ -2,12 +2,20 @@
 @import 'mixins';
 
 /*
-	Strata by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$size-header-pad:		1.5em;
+/* Basic */
+	
+	html, body {
+		min-width: 320px;
+	}
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
 
 /* List */
 
@@ -26,8 +34,8 @@ $size-header-pad:		1.5em;
 				}
 				
 				> * {
-					margin: 0 !important;
 					width: 100%;
+					margin: 0 !important;
 					
 					&.icon {
 						&:before {
@@ -47,30 +55,20 @@ $size-header-pad:		1.5em;
 				}
 			}
 		}
-	}
 
-/* Header */
-
-	#header {
-		padding: ($size-header-pad * 3) $size-header-pad;
-
-		h1 {
-			br {
-				display: none;
-			}
-		}
-	}
-
-/* Footer */
-
-	#footer {
-		.copyright {
+		&.feature-icons {
 			li {
-				border-left-width: 0;
 				display: block;
-				line-height: 2.25em;
-				margin-left: 0;
-				padding-left: 0;
+				width: 100%;
 			}
 		}
+	}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		padding: 0;
 	}

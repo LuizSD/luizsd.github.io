@@ -1,80 +1,115 @@
 /*
-	Strata by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Basic */
 
-	h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-		display: none;
+	body, input, select, textarea {
+		font-size: 12pt;
 	}
 
-/* List */
+/* Image */
 
-	ul.icons li .icon {
-		font-size: 1.25em;
+	.image.left, .image.right {
+		max-width: 40%;
 	}
+
+		.image.left img, .image.right img {
+			width: 100%;
+		}
 
 /* Header */
 
+	#skel-layers-wrapper {
+		padding-top: 44px;
+	}
+
 	#header {
-		background-attachment: scroll;
-		background-position: top left,	center center;
-		background-size: auto,		cover;
+		background: none;
+		bottom: auto;
 		left: auto;
-		padding: 6em 4em;
 		position: relative;
-		text-align: center;
+		right: auto;
 		top: auto;
 		width: 100%;
 	}
 
-		#header h1 {
-			font-size: 1.75em;
+		#header > footer {
+			bottom: auto;
+			left: auto;
+			margin: 1em 0 0 0;
+			position: relative;
+			right: auto;
+			top: auto;
 		}
 
-			#header h1 br {
-				display: inline;
-			}
+/* Wrapper */
 
-/* Footer */
-
-	#footer {
-		background-attachment: scroll;
-		background-color: #1f1815;
-		background-image: url("images/overlay.png"), url("../images/bg.jpg");
-		background-position: top left,						bottom center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
-		bottom: auto;
-		left: auto;
-		padding: 4em 4em 6em 4em;
-		position: relative;
-		text-align: center;
-		width: 100%;
+	#wrapper {
+		padding: 0;
 	}
 
-		#footer .icons {
-			margin: 0 0 1em 0;
+/* One */
+
+	#one:before {
+		height: 10em;
+	}
+
+/* Layers */
+
+	#titleBar {
+		background: #222;
+		color: #fff;
+		min-width: 320px;
+	}
+
+		#titleBar .title {
+			color: #fff;
+			display: block;
+			font-weight: 700;
+			height: 44px;
+			line-height: 44px;
+			padding: 0 1em;
+			width: 100%;
+			text-align: left;
 		}
 
-		#footer .copyright {
-			margin: 0 0 1em 0;
+		#titleBar .toggle {
+			text-decoration: none;
+			height: 4em;
+			position: absolute;
+			top: 0;
+			width: 6em;
+			right: 0;
 		}
 
-			#footer .copyright li {
-				border-left-width: 1px;
-				display: inline-block;
-				line-height: 1em;
-				margin-left: 0.75em;
-				padding-left: 0.75em;
+			#titleBar .toggle:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
 			}
 
-/* Main */
+			#titleBar .toggle:before {
+				background: #4acaa8;
+				color: #ffffff;
+				content: '\f0c9';
+				display: block;
+				font-size: 18px;
+				height: 44px;
+				line-height: 44px;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 64px;
+				right: 0;
+			}
 
-	#main {
-		margin: 0;
-		padding: 6em 4em;
-		width: 100%;
+	#sidePanel {
+		background: #4acaa8;
+		color: #d1f1e9;
 	}

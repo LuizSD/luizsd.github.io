@@ -2,92 +2,131 @@
 @import 'mixins';
 
 /*
-	Strata by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$size-header-pad:		4em;
-
 /* Basic */
 
-	h1, h2, h3, h4, h5, h6 {
-		br {
-			display: none;
-		}
+	body, input, select, textarea {
+		font-size: 12pt;
 	}
 
-/* List */
+/* Image */
 
-	ul {
-		&.icons {
-			li {
-				.icon {
-					font-size: 1.25em;
-				}
+	.image {
+		&.left,
+		&.right {
+			max-width: 40%;
+
+			img {
+				width: 100%;
 			}
 		}
 	}
 
 /* Header */
 
-	#header {
-		background-attachment:	scroll;
-		background-position:	top left,	center center;
-		background-size:		auto,		cover;
-		left: auto;
-		padding: ($size-header-pad * 1.5) $size-header-pad;
-		position: relative;
-		text-align: center;
-		top: auto;
-		width: 100%;
-		
-		h1 {
-			font-size: 1.75em;
-			
-			br {
-				display: inline;
-			}
-		}
+	#skel-layers-wrapper {
+		padding-top: 44px;
 	}
 
-/* Footer */
-
-	#footer {
-		background-attachment:	scroll;
-		background-color:		$color-accent2-bg;
-		background-image:		url('images/overlay.png'),		url('../images/bg.jpg');
-		background-position:	top left,						bottom center;
-		background-repeat:		repeat,							no-repeat;
-		background-size:		auto,							cover;
+	#header {
+		background: none;
 		bottom: auto;
 		left: auto;
-		padding: $size-header-pad $size-header-pad ($size-header-pad * 1.5) $size-header-pad;
 		position: relative;
-		text-align: center;
+		right: auto;
+		top: auto;
 		width: 100%;
 
-		.icons {
-			margin: 0 0 ($size-element-margin * 0.5) 0;
+		> footer {
+			bottom: auto;
+			left: auto;
+			margin: 1em 0 0 0;
+			position: relative;
+			right: auto;
+			top: auto;
+		}
+	}
+
+/* Wrapper */
+
+	#wrapper {
+		padding: 0;
+	}
+
+/* One */
+
+	#one {
+		&:before {
+			height: 10em;
+		}
+	}
+
+/* Layers */
+
+	#titleBar {
+		background: #222;
+		color: #fff;
+		min-width: 320px;
+
+		.title {
+			color: #fff;
+			display: block;
+			font-weight: $font-weight-bold;
+			height: 44px;
+			line-height: 44px;
+			padding: 0 1em;
+			width: 100%;
+
+			@if $side-header == 'right' {
+				text-align: left;
+			}
+			@else {
+				text-align: right;
+			}
 		}
 
-		.copyright {
-			margin: 0 0 ($size-element-margin * 0.5) 0;
+		.toggle {
+			@include icon;
+			height: 4em;
+			position: absolute;
+			top: 0;
+			width: 6em;
 
-			li {
-				border-left-width: 1px;
-				display: inline-block;
-				line-height: 1em;
-				margin-left: 0.75em;
-				padding-left: 0.75em;
+			@if $side-header == 'right' {
+				right: 0;
+			}
+			@else {
+				left: 0;
+			}
+
+			&:before {
+				background: $color-accent-bg;
+				color: $color-accent-fg-bold;
+				content: '\f0c9';
+				display: block;
+				font-size: 18px;
+				height: 44px;
+				line-height: 44px;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 64px;
+
+				@if $side-header == 'right' {
+					right: 0;
+				}
+				@else {
+					left: 0;
+				}
 			}
 		}
 	}
-	
-/* Main */
 
-	#main {
-		margin: 0;
-		padding: ($size-header-pad * 1.5) $size-header-pad;
-		width: 100%;
+	#sidePanel {
+		background: $color-header-bg;
+		color: $color-header-fg;
 	}
