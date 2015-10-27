@@ -3,11 +3,11 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email: zourenyuan@gmail.com
+title: LuizSD
+email: lsantosdutra@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A simple and awesome blog theme powered by jekyll. Inspired by PureCSS blog layout and build by bootstrap 4.
-url: http://renyuanz.github.io/leonids # the base hostname & protocol for your site
+url: http://www.luizsd.com # the base hostname & protocol for your site
 
 #
 ###################################
@@ -36,13 +36,13 @@ kramdown:
 ####################################
 #
 owner:
-  name: Renyuan
+  name: Luiz Santos
   avatar: bio-photo.jpg
-  bio: "Work hard, play harder."
-  email: zourenyuan@gmail.com
-  disqus-shortname: renyuanzblog
-  twitter: alittlered3 #username
-  facebook: #username
+  bio: "Testando os Testes Testados"
+  email: lsantosdutra@gmail.com
+  disqus-shortname: LuizSD
+  twitter: luizsd 
+  facebook: luizsd
   google:
     plus: #username
     analytics:
@@ -50,11 +50,11 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: renyuanz #username
+  github: luizsd
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: LuizSD
   xing: #username
-  instagram: alittlered0814 #username
+  instagram: luizsd
   lastfm: #username
   tumblr: #username
   pinterest: #username
