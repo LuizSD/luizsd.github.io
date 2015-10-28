@@ -64,4 +64,4 @@ alert("teste");
   <li>Tea</li>
   <li>Milk</li>
 </ul>
-<img src="{{ site.url }}/12191957_10206577449969648_307256739280067244_n.jpg" alt="Smiley face" height="42" width="42" />
+<img src="{{ site.url }}/img/12191957_10206577449969648_307256739280067244_n.jpg" alt="Smiley face" height="42" width="42" />
