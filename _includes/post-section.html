@@ -40,13 +40,13 @@
       alt="{{ post.title }} feature image">
 
       {% if post.image.credit %}
-      <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
+      <span class="image-credit">Credito da foto: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
       {% endif %}
     </div><!-- /.image-wrap -->
     {% endif %}
     <div class="post-description">
-      <p>
-        {{ post.excerpt }} <br /><br /> <a class="post-title" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Leia mais...</a>
+      <p class="nav-item">
+        {{ post.excerpt }} <br /><br /> <a href="{{ site.url }}{{ post.url }}" title="IMG: {{ post.title }}"><Leia mais...</a>
       </p>
     </div>
 
