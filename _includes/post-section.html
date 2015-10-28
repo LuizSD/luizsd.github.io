@@ -18,10 +18,10 @@
     {% endif %}
 
     <p class="post-meta">
-      By
+      Por
       <a class="post-author" href="{{ author.site }}">{{ author.name }}</a>
       {% if post.tags.size > 0 %}
-      under
+      com as tags
       {% for tag in post.tags %}
       <a class="post-tag {{ tag | slugize }}" href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a>
       {% endfor %}
@@ -29,13 +29,6 @@
     </p>
 
     </header>
-
-    <div class="post-description">
-      <p>
-        {{ post.excerpt }}
-      </p>
-    </div>
-
     {% if post.image.feature %}
     <div class="post-feature-image">
       <img src=
@@ -51,5 +44,10 @@
       {% endif %}
     </div><!-- /.image-wrap -->
     {% endif %}
+    <div class="post-description">
+      <p>
+        {{ post.excerpt }} <br /><br /> <a class="post-title" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Leia mais...</a>
+      </p>
+    </div>
 
 </section>
