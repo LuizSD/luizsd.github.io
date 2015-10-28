@@ -7,14 +7,14 @@ tags: [teste, jekyll]
 comments: true
 pinned: true
 image:
-  feature: sample-image-2.jpg
+  feature: 12191957_10206577449969648_307256739280067244_n.jpg
 ---
 
 ### Testando subtitulo
 
 Testando um pouco de teste aqui. Testando um pouco de teste aqui. Testando um pouco de teste aqui. Testando um pouco de teste aqui. Testando um pouco de teste aqui. Testando um pouco de teste aqui. Testando um pouco de teste aqui. Testando um pouco de teste aqui. Testando um pouco de teste aqui. Testando um pouco de teste aqui. Testando um pouco de teste aqui. 
 
-![Smithsonian Image]({{ site.url }}/img/AllRangeres.jpg.jpg)
+![Smithsonian Image]({{ site.url }}/img/12191957_10206577449969648_307256739280067244_n.jpg)
 {: .pull-left}
 
 *VOU colocar uma lista* 
@@ -64,4 +64,4 @@ alert("teste");
   <li>Tea</li>
   <li>Milk</li>
 </ul>
-<img src="{{ site.url }}/12191957_10206577449969648_307256739280067244_n.jpg.gif" alt="Smiley face" height="42" width="42" />
+<img src="{{ site.url }}/12191957_10206577449969648_307256739280067244_n.jpg" alt="Smiley face" height="42" width="42" />
