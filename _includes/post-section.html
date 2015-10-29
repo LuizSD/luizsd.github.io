@@ -31,13 +31,13 @@
     </header>
     {% if post.image.feature %}
     <div class="post-feature-image">
-      <img src=
+     a href="{{ site.url }}{{ post.url }}" title="IMG: {{ post.title }}"> <img src=
       {% if post.image.feature contains 'http' %}
       "{{ post.image.feature }}"
       {% else %}
       "{{ site.url }}/img/{{ post.image.feature }}"
       {% endif %}
-      alt="{{ post.title }} feature image">
+      alt="{{ post.title }} feature image"> </a>
 
       {% if post.image.credit %}
       <span class="image-credit">Credito da foto: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
