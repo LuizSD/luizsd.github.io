@@ -31,7 +31,7 @@
     </header>
     {% if post.image.feature %}
     <div class="post-feature-image">
-     a href="{{ site.url }}{{ post.url }}" title="IMG: {{ post.title }}"> <img src=
+     <a href="{{ site.url }}{{ post.url }}" title="IMG: {{ post.title }}"> <img src=
       {% if post.image.feature contains 'http' %}
       "{{ post.image.feature }}"
       {% else %}
@@ -47,7 +47,7 @@
     {% endif %}
     <div class="post-description">
       <p class="nav-item">
-        {{ post.excerpt }} <br /><br /> <a href="{{ site.url }}{{ post.url }}" title="IMG: {{ post.title }}">Leia mais...</a>
+        {{ post.excerpt }} <br /><br /> <a href="{{ site.url }}{{ post.url }}" title="Leia mais: {{ post.title }}">Leia mais...</a>
       </p>
     </div>
 
